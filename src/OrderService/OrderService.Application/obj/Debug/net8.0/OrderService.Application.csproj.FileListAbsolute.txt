@@ -1,0 +1,15 @@
+/Users/erikakovlev/RiderProjects/OnlineStore/src/OrderService/OrderService.Application/bin/Debug/net8.0/OrderService.Application.deps.json
+/Users/erikakovlev/RiderProjects/OnlineStore/src/OrderService/OrderService.Application/bin/Debug/net8.0/OrderService.Application.dll
+/Users/erikakovlev/RiderProjects/OnlineStore/src/OrderService/OrderService.Application/bin/Debug/net8.0/OrderService.Application.pdb
+/Users/erikakovlev/RiderProjects/OnlineStore/src/OrderService/OrderService.Application/bin/Debug/net8.0/OrderService.Domain.dll
+/Users/erikakovlev/RiderProjects/OnlineStore/src/OrderService/OrderService.Application/bin/Debug/net8.0/OrderService.Domain.pdb
+/Users/erikakovlev/RiderProjects/OnlineStore/src/OrderService/OrderService.Application/obj/Debug/net8.0/OrderService.Application.csproj.AssemblyReference.cache
+/Users/erikakovlev/RiderProjects/OnlineStore/src/OrderService/OrderService.Application/obj/Debug/net8.0/OrderService.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/erikakovlev/RiderProjects/OnlineStore/src/OrderService/OrderService.Application/obj/Debug/net8.0/OrderService.Application.AssemblyInfoInputs.cache
+/Users/erikakovlev/RiderProjects/OnlineStore/src/OrderService/OrderService.Application/obj/Debug/net8.0/OrderService.Application.AssemblyInfo.cs
+/Users/erikakovlev/RiderProjects/OnlineStore/src/OrderService/OrderService.Application/obj/Debug/net8.0/OrderService.Application.csproj.CoreCompileInputs.cache
+/Users/erikakovlev/RiderProjects/OnlineStore/src/OrderService/OrderService.Application/obj/Debug/net8.0/OrderService.Application.dll
+/Users/erikakovlev/RiderProjects/OnlineStore/src/OrderService/OrderService.Application/obj/Debug/net8.0/refint/OrderService.Application.dll
+/Users/erikakovlev/RiderProjects/OnlineStore/src/OrderService/OrderService.Application/obj/Debug/net8.0/OrderService.Application.pdb
+/Users/erikakovlev/RiderProjects/OnlineStore/src/OrderService/OrderService.Application/obj/Debug/net8.0/ref/OrderService.Application.dll
+/Users/erikakovlev/RiderProjects/OnlineStore/src/OrderService/OrderService.Application/obj/Debug/net8.0/OrderService.Application.csproj.CopyComplete

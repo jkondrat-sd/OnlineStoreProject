@@ -1,0 +1,151 @@
+services:
+  zookeeper:
+    image: bitnami/zookeeper:3.8
+    environment:
+      - ALLOW_ANONYMOUS_LOGIN=yes
+    ports:
+      - "2181:2181"
+    healthcheck:
+      test: ["CMD", "zkServer.sh", "status"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - backend-network
+
+  kafka:
+    image: bitnami/kafka:3.5
+    depends_on:
+      zookeeper:
+        condition: service_healthy
+    ports:
+      - "9092:9092"
+    environment:
+      - KAFKA_BROKER_ID=1
+      - KAFKA_ZOOKEEPER_CONNECT=zookeeper:2181
+      - ALLOW_PLAINTEXT_LISTENER=yes
+      - KAFKA_LISTENERS=PLAINTEXT://:9092
+      - KAFKA_ADVERTISED_LISTENERS=PLAINTEXT://kafka:9092
+    healthcheck:
+      test: ["CMD", "kafka-broker-api-versions.sh", "--bootstrap-server", "kafka:9092"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - backend-network
+
+  postgres_orders:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_DB: orders
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: secret
+    ports:
+      - "5432:5432"
+    volumes:
+      - orders-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+    networks:
+      - backend-network
+
+  postgres_payments:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_DB: payments
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: secret
+    ports:
+      - "5433:5432"
+    volumes:
+      - payments-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+    networks:
+      - backend-network
+
+  order-service:
+    build:
+      context: .
+      dockerfile: OrderService/OrderService.API/Dockerfile
+    depends_on:
+      postgres_orders:
+        condition: service_healthy
+      kafka:
+        condition: service_healthy
+    environment:
+      ConnectionStrings__OrderDatabase: "Host=postgres_orders;Port=5432;Database=orders;Username=postgres;Password=secret;Include Error Detail=true"
+      KafkaSettings__BootstrapServers: kafka:9092
+      KafkaSettings__OrderCreatedTopic: order-created
+      KafkaSettings__OrderStatusChangedTopic: order-status-changed
+      KafkaSettings__PaymentSucceededTopic: payment-succeeded
+      KafkaSettings__PaymentFailedTopic: payment-failed
+      KafkaSettings__ConsumerGroupId: order-service
+    ports:
+      - "8081:8080"
+    networks:
+      - backend-network
+
+  payment-service:
+    build:
+      context: .
+      dockerfile: PaymentService/PaymentService.API/Dockerfile
+    depends_on:
+      postgres_payments:
+        condition: service_healthy
+      kafka:
+        condition: service_healthy
+    environment:
+      ConnectionStrings__PaymentDatabase: "Host=postgres_payments;Port=5432;Database=payments;Username=postgres;Password=secret;Include Error Detail=true"
+      KafkaSettings__BootstrapServers: kafka:9092
+      KafkaSettings__OrderCreatedTopic: order-created
+      KafkaSettings__OrderStatusChangedTopic: order-status-changed
+      KafkaSettings__PaymentSucceededTopic: payment-succeeded
+      KafkaSettings__PaymentFailedTopic: payment-failed
+      KafkaSettings__ConsumerGroupId: payment-service
+    ports:
+      - "8082:8080"
+    networks:
+      - backend-network
+
+  api-gateway:
+    build:
+      context: .
+      dockerfile: APIGateway/APIGateway.API/Dockerfile
+    depends_on:
+      - order-service
+      - payment-service
+    environment:
+      - ServiceEndpoints__OrderService=http://order-service:8080
+      - ServiceEndpoints__PaymentService=http://payment-service:8080
+    ports:
+      - "8080:8080"
+    networks:
+      - backend-network
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "80:80"
+    environment:
+      - REACT_APP_API_BASE_URL=http://localhost/api
+    depends_on:
+        - api-gateway
+    networks:
+        - backend-network
+
+networks:
+  backend-network:
+    driver: bridge
+
+volumes:
+  orders-data:
+  payments-data:

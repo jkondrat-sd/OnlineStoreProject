@@ -1,0 +1,12 @@
+/Users/erikakovlev/RiderProjects/OnlineStore/src/PaymentService/PaymentService.Application/bin/Debug/net9.0/PaymentService.Application.deps.json
+/Users/erikakovlev/RiderProjects/OnlineStore/src/PaymentService/PaymentService.Application/bin/Debug/net9.0/PaymentService.Application.dll
+/Users/erikakovlev/RiderProjects/OnlineStore/src/PaymentService/PaymentService.Application/bin/Debug/net9.0/PaymentService.Application.pdb
+/Users/erikakovlev/RiderProjects/OnlineStore/src/PaymentService/PaymentService.Application/obj/Debug/net9.0/PaymentService.Application.csproj.AssemblyReference.cache
+/Users/erikakovlev/RiderProjects/OnlineStore/src/PaymentService/PaymentService.Application/obj/Debug/net9.0/PaymentService.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/erikakovlev/RiderProjects/OnlineStore/src/PaymentService/PaymentService.Application/obj/Debug/net9.0/PaymentService.Application.AssemblyInfoInputs.cache
+/Users/erikakovlev/RiderProjects/OnlineStore/src/PaymentService/PaymentService.Application/obj/Debug/net9.0/PaymentService.Application.AssemblyInfo.cs
+/Users/erikakovlev/RiderProjects/OnlineStore/src/PaymentService/PaymentService.Application/obj/Debug/net9.0/PaymentService.Application.csproj.CoreCompileInputs.cache
+/Users/erikakovlev/RiderProjects/OnlineStore/src/PaymentService/PaymentService.Application/obj/Debug/net9.0/PaymentService.Application.dll
+/Users/erikakovlev/RiderProjects/OnlineStore/src/PaymentService/PaymentService.Application/obj/Debug/net9.0/refint/PaymentService.Application.dll
+/Users/erikakovlev/RiderProjects/OnlineStore/src/PaymentService/PaymentService.Application/obj/Debug/net9.0/PaymentService.Application.pdb
+/Users/erikakovlev/RiderProjects/OnlineStore/src/PaymentService/PaymentService.Application/obj/Debug/net9.0/ref/PaymentService.Application.dll

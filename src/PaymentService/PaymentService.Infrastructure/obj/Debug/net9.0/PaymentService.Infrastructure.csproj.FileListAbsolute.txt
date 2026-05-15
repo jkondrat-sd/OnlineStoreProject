@@ -1,0 +1,14 @@
+/Users/erikakovlev/RiderProjects/OnlineStore/src/PaymentService/PaymentService.Infrastructure/bin/Debug/net9.0/PaymentService.Infrastructure.deps.json
+/Users/erikakovlev/RiderProjects/OnlineStore/src/PaymentService/PaymentService.Infrastructure/bin/Debug/net9.0/PaymentService.Infrastructure.runtimeconfig.json
+/Users/erikakovlev/RiderProjects/OnlineStore/src/PaymentService/PaymentService.Infrastructure/bin/Debug/net9.0/PaymentService.Infrastructure.dll
+/Users/erikakovlev/RiderProjects/OnlineStore/src/PaymentService/PaymentService.Infrastructure/bin/Debug/net9.0/PaymentService.Infrastructure.pdb
+/Users/erikakovlev/RiderProjects/OnlineStore/src/PaymentService/PaymentService.Infrastructure/obj/Debug/net9.0/PaymentService.Infrastructure.csproj.AssemblyReference.cache
+/Users/erikakovlev/RiderProjects/OnlineStore/src/PaymentService/PaymentService.Infrastructure/obj/Debug/net9.0/PaymentService.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/erikakovlev/RiderProjects/OnlineStore/src/PaymentService/PaymentService.Infrastructure/obj/Debug/net9.0/PaymentService.Infrastructure.AssemblyInfoInputs.cache
+/Users/erikakovlev/RiderProjects/OnlineStore/src/PaymentService/PaymentService.Infrastructure/obj/Debug/net9.0/PaymentService.Infrastructure.AssemblyInfo.cs
+/Users/erikakovlev/RiderProjects/OnlineStore/src/PaymentService/PaymentService.Infrastructure/obj/Debug/net9.0/PaymentService.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/erikakovlev/RiderProjects/OnlineStore/src/PaymentService/PaymentService.Infrastructure/obj/Debug/net9.0/PaymentService.Infrastructure.dll
+/Users/erikakovlev/RiderProjects/OnlineStore/src/PaymentService/PaymentService.Infrastructure/obj/Debug/net9.0/refint/PaymentService.Infrastructure.dll
+/Users/erikakovlev/RiderProjects/OnlineStore/src/PaymentService/PaymentService.Infrastructure/obj/Debug/net9.0/PaymentService.Infrastructure.pdb
+/Users/erikakovlev/RiderProjects/OnlineStore/src/PaymentService/PaymentService.Infrastructure/obj/Debug/net9.0/PaymentService.Infrastructure.genruntimeconfig.cache
+/Users/erikakovlev/RiderProjects/OnlineStore/src/PaymentService/PaymentService.Infrastructure/obj/Debug/net9.0/ref/PaymentService.Infrastructure.dll

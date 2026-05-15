@@ -1,0 +1,12 @@
+/Users/erikakovlev/RiderProjects/OnlineStore/src/OrderService/OrderService.Domain/bin/Debug/net9.0/OrderService.Domain.deps.json
+/Users/erikakovlev/RiderProjects/OnlineStore/src/OrderService/OrderService.Domain/bin/Debug/net9.0/OrderService.Domain.dll
+/Users/erikakovlev/RiderProjects/OnlineStore/src/OrderService/OrderService.Domain/bin/Debug/net9.0/OrderService.Domain.pdb
+/Users/erikakovlev/RiderProjects/OnlineStore/src/OrderService/OrderService.Domain/obj/Debug/net9.0/OrderService.Domain.csproj.AssemblyReference.cache
+/Users/erikakovlev/RiderProjects/OnlineStore/src/OrderService/OrderService.Domain/obj/Debug/net9.0/OrderService.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/erikakovlev/RiderProjects/OnlineStore/src/OrderService/OrderService.Domain/obj/Debug/net9.0/OrderService.Domain.AssemblyInfoInputs.cache
+/Users/erikakovlev/RiderProjects/OnlineStore/src/OrderService/OrderService.Domain/obj/Debug/net9.0/OrderService.Domain.AssemblyInfo.cs
+/Users/erikakovlev/RiderProjects/OnlineStore/src/OrderService/OrderService.Domain/obj/Debug/net9.0/OrderService.Domain.csproj.CoreCompileInputs.cache
+/Users/erikakovlev/RiderProjects/OnlineStore/src/OrderService/OrderService.Domain/obj/Debug/net9.0/OrderService.Domain.dll
+/Users/erikakovlev/RiderProjects/OnlineStore/src/OrderService/OrderService.Domain/obj/Debug/net9.0/refint/OrderService.Domain.dll
+/Users/erikakovlev/RiderProjects/OnlineStore/src/OrderService/OrderService.Domain/obj/Debug/net9.0/OrderService.Domain.pdb
+/Users/erikakovlev/RiderProjects/OnlineStore/src/OrderService/OrderService.Domain/obj/Debug/net9.0/ref/OrderService.Domain.dll

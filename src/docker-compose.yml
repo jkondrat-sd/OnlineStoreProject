@@ -1,6 +1,6 @@
 services:
   zookeeper:
-    image: bitnami/zookeeper:3.8
+    image: soldevelo/zookeeper:3.8
     environment:
       - ALLOW_ANONYMOUS_LOGIN=yes
     ports:
@@ -14,7 +14,7 @@ services:
       - backend-network
 
   kafka:
-    image: bitnami/kafka:3.5
+    image: soldevelo/kafka:3.5
     depends_on:
       zookeeper:
         condition: service_healthy
